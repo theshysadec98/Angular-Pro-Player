@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PetComponent } from './pet/pet.component';
+import { TestComponent } from './test/test.component';
+import { FontSizeComponent } from './font-size/font-size.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PetComponent
+    PetComponent,
+    TestComponent,
+    FontSizeComponent
   ],
   imports: [
     FormsModule,

@@ -1,0 +1,17 @@
+<p>test works!</p>
+<script>
+  function map1(mang, goiLai) {
+    console.log('map() start');
+    const result = [];
+    for(const i of mang) {
+        result.push(goiLai(i));
+    }
+    console.log('completed');
+    return mang;
+}
+const tenNguoi = ["trung","Chung","chlung"];
+map1(tenNguoi, (name)=>{
+    setTimeout(()=>{console.log(`Test thoi ma BDB ${name}`)})
+    return `Hello, ${name}`;
+})
+</script>
