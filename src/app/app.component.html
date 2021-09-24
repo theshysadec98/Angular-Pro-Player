@@ -1,5 +1,23 @@
-<!-- <app-home></app-home>
-<br/>
-<app-pet></app-pet> -->
-<!-- <app-test></app-test> -->
-<app-font-size></app-font-size>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/', 'home']" routerLinkActive="router-link-active" >Home</a></li>
+      <li><a [routerLink]="['/font']" routerLinkActive="router-link-active" >Font</a> </li>
+      <li><a [routerLink]="['/test']" routerLinkActive="router-link-active" >Test</a> </li>
+      <li><a [routerLink]="['/pet']" routerLinkActive="router-link-active" >Pet</a></li>
+      <li><a [routerLink]="['/form']" routerLinkActive="router-link-active" >Form</a></li>
+    </ul>
+  </nav>
+<router-outlet></router-outlet>
+</body>
+</html>

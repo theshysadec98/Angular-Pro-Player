@@ -7,6 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { PetComponent } from './pet/pet.component';
 import { TestComponent } from './test/test.component';
 import { FontSizeComponent } from './font-size/font-size.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { BoldDirective } from './Directives/bold.directive';
+import { FormComponent } from './form/form.component';
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +19,10 @@ import { FontSizeComponent } from './font-size/font-size.component';
     HomeComponent,
     PetComponent,
     TestComponent,
-    FontSizeComponent
+    FontSizeComponent,
+    NotFoundComponent,
+    BoldDirective,
+    FormComponent
   ],
   imports: [
     FormsModule,

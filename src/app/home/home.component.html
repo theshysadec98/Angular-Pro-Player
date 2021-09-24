@@ -1,11 +1,64 @@
-<p>home works!</p>
-<p>Hello {{name}}</p>
-<span *ngIf="age >20"> may bi ngu a {{age}}</span>
-<span *ngIf='age <=20'> may chua bi ngu dau {{age}}</span>
-<br/>
-<br/>
-<input [(ngModel)]="name">
-<br/>
-<select name="" id="">
-  <option *ngFor="let i of list"> {{ i }}</option>
-</select>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <br/>
+  <br/>
+  <br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p>Hello {{name}}</p>
+      </div>
+      <div class="col-sm">
+        <span *ngIf="age >20">  {{message1 + " "+ age}}</span>
+        <span *ngIf='age <=20'>  {{message2+ " "+ age}}</span>
+      </div>
+      <div class="col-sm">
+        <button (click)="tempUpdate()" type="button" class="btn btn-primary">Tang tuoi</button>
+      </div>
+      <div class="col-sm">
+        <button (click)="tempDown()" type="button" class="btn btn-primary">Giam tuoi</button>
+      </div>
+      <div class="col-sm">
+        <button (click)="upCase()" type="button" class="btn btn-primary">Doi chu in hoa</button>
+      </div>
+      <div class="col-sm">
+        <button (click)= "downCase()" type="button" class="btn btn-primary">Doi chu thuong</button>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <input [(ngModel)]="name">
+      </div>
+      <div class="col">
+        <select name="" id="">
+          <option *ngFor="let i of list"> {{ i }}</option>
+        </select>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+      </div>
+      <div class="col">
+
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
